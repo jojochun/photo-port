@@ -40,7 +40,7 @@ function Nav() {
                             className="mx-1"
                             key={category.name}
                         >
-                            <span onClick={categorySelected}>
+                            <span onClick={() => categorySelected(category.name)} >
                                 {category.name}
                             </span>
                         </li>
